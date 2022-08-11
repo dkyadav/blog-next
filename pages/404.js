@@ -1,5 +1,19 @@
 // pages/404.js
+import Layout from "../components/layout";
+import Head from "next/head";
+import utilStyles from "../styles/utils.module.css";
+
 export default function fourzerofour() {
-    return <h1>404 - Page Not Found!!</h1>;
+    return (
+        <Layout>
+            <Head>
+                <title>404 - Page Not Found</title>
+            </Head>
+            <h1 className={utilStyles.headingXl}>
+                404 - Page Not Found!!
+            </h1>
+            
+        </Layout>
+    );
   }
   
