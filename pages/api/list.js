@@ -12,8 +12,10 @@ export async function getStaticProps() {
 }
 
 export default function showlist({allPostsData,...req}, res) {
+    //allPostsData is not getting passed
+    const allPostsDataList = getSortedPostsData();
     console.log(req.query);
     console.log(allPostsData);
-    res.status(200).json({ text: 'list' });
+    res.status(200).json({ text: 'list', list: allPostsDataList });
 }
   
