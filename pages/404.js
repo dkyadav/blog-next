@@ -9,10 +9,10 @@ export default function fourzerofour() {
             <Head>
                 <title>404 - Page Not Found</title>
             </Head>
-            <h1 className={utilStyles.headingXl}>
+            <h1 className={`${utilStyles.headingXl} ${utilStyles.lightText}`}>
                 404 - Page Not Found!!
             </h1>
-            
+
         </Layout>
     );
   }
